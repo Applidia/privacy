@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applidia – Legal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="landing-body">
+  <div class="landing-container">
+    <div class="header">
+      <img src="logo.svg" alt="Applidia Logo" class="logo-img">
+      <span class="logo-text">Applidia</span>
+    </div>
+
+    <p class="landing-title">Select your language</p>
+    <p class="landing-subtitle">Sélectionnez votre langue · Wählen Sie Ihre Sprache</p>
+
+    <div class="lang-grid">
+      <a href="en/">
+        <span class="lang-code">EN</span>
+        <span class="lang-name">English</span>
+      </a>
+      <a href="fr/">
+        <span class="lang-code">FR</span>
+        <span class="lang-name">Français</span>
+      </a>
+      <a href="de/">
+        <span class="lang-code">DE</span>
+        <span class="lang-name">Deutsch</span>
+      </a>
+      <a href="it/">
+        <span class="lang-code">IT</span>
+        <span class="lang-name">Italiano</span>
+      </a>
+      <a href="es/">
+        <span class="lang-code">ES</span>
+        <span class="lang-name">Español</span>
+      </a>
+      <a href="pt/">
+        <span class="lang-code">PT</span>
+        <span class="lang-name">Português</span>
+      </a>
+    </div>
+
+    <div class="landing-footer">
+      &copy; 2025 Applidia Sàrl. All rights reserved.
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      var supported = ['en','fr','de','it','es','pt'];
+      var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase().slice(0,2);
+      if (supported.indexOf(lang) !== -1) {
+        window.location.replace(lang + '/');
+      }
+    })();
+  </script>
+</body>
+</html>
