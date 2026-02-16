@@ -132,9 +132,8 @@ body {
 }
 
 .logo-text {
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
+  width: 20%;
+  height: auto;
 }
 
 /* ============================
@@ -369,7 +368,7 @@ footer {
   }
 
   .logo-text {
-    font-size: 22px;
+    width: 20%;
   }
 
   .doc-selector {
